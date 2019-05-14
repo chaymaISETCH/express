@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <style>
+        *{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;}
+        .contactContainer {
+    flex-direction: column;
+    display: flex;
+}
+.send {
+    background-color: cornsilk;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+input, textarea {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+div.container {
+  padding: 10px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:center;
+}
+.nav-container{position:fixed; left:0;right:0;top:0;background-color: white;z-index:55 }
+nav{display:flex;align-items: center;justify-content:space-around;padding:1%}
+main{margin-left:10%;margin-right:10%}
+.marging-div{padding-left:30%;padding-right:30%;}
+.center {text-align:center}
+
+a{ color:#ababab;
+  text-decoration: none;
+  font-size: 13px;
+  padding:5px;}
+section{
+  display:flex;
+  justify-content:space-between;
+}
+
+a:hover{
+  color:#00b39b; 
+}
+.active{color:#00b39b;}
+.center-image{display: block;margin:0 auto}
+
+aside{display:flex;flex-direction: column;}
+
+
+h1,h2{  color:#87c643;font-size: 30px;}
+
+span{color:white;font-size:1.625em;}
+
+p{color:#747474;font-size: 16px;line-height: 1.75;padding:5px}
+.intro{display:flex}
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav-container">
+        <h1>Express js</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Our Services</a>
+            <a href="" class="active">Contact</a>
+        </nav>
+    </nav>
+    <main>
+        <aside style="margin: 20% 10%;">
+                        <h1>Contact</h1>
+                        <div class="contactContainer">
+                
+                            <input type="text" placeholder="your name">
+                            <input type="email" placeholder="your email">
+                            <input type="tel" placeholder="your phone">
+                            <textarea placeholder="your message"></textarea>
+                            <button class="send">Send</button>
+                
+                
+                
+                        </div>
+                
+                    </section>
+        </aside>
+    </main>
+
+</body>
+
+</html>
